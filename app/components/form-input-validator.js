@@ -1,7 +1,7 @@
 import Component from '@glimmer/component';
 import { action } from '@ember/object';
 
-export default class FormInputComponent extends Component {
+export default class FormInputValidatorComponent extends Component {
   @action
   inputFieldChanged(event) {
     const { id, onChange, validator } = this.args;

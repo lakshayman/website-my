@@ -3,22 +3,22 @@ import { setupRenderingTest } from 'ember-qunit';
 import { render } from '@ember/test-helpers';
 import { hbs } from 'ember-cli-htmlbars';
 
-module('Integration | Component | form-input', function (hooks) {
+module('Integration | Component | form-input-validator', function (hooks) {
   setupRenderingTest(hooks);
 
   test('it renders', async function (assert) {
     // Set any properties with this.set('myProperty', 'value');
     // Handle any actions with this.set('myAction', function(val) { ... });
 
-    await render(hbs`<FormInput />`);
+    await render(hbs`<FormInputValidator />`);
 
     assert.equal(this.element.textContent.trim(), ':');
 
     // Template block usage:
     await render(hbs`
-      <FormInput>
+      <FormInputValidator>
         template block text
-      </FormInput>
+      </FormInputValidator>
     `);
 
     assert.equal(this.element.textContent.trim(), ':');
